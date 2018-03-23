@@ -1,0 +1,2875 @@
+{
+	"id": "464e18a3-5858-4d33-a534-4329e9452173",
+	"name": "assignment 2 test",
+	"allTests": [],
+	"timestamp": "2017-10-14T23:08:12.012Z",
+	"collection_id": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "789d41bb-36da-4b44-2e30-e44dc0bc3064",
+	"data": [],
+	"delay": "300",
+	"count": 1,
+	"collection": {
+		"id": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+		"name": "assignment 2 test",
+		"description": "Test for assignment 2 (496)",
+		"order": [],
+		"folders": [
+			{
+				"name": "Arrival and at sea tests",
+				"description": "Testing the arrival functionality",
+				"collectionId": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"collection": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"order": [
+					"ddcba4df-caff-fd7c-5e21-473cee9f3815",
+					"02e5bcab-bd99-c7ff-8f06-175bc4efac06",
+					"6ffd5b81-18fa-c3ec-3980-bf14067a1335",
+					"a9c25312-c3b0-f25e-0b17-1f8652d8cb22",
+					"27f36dc7-4a4f-9613-9586-0f23e5cbc264",
+					"fda88e84-8638-151d-2fb8-71fc324c99fc",
+					"725b8fc2-cd36-f113-c435-9329f2e730a2",
+					"b3c54a5c-b517-ca81-5882-641466bfe78f"
+				],
+				"owner": "2860827",
+				"folders_order": [],
+				"createdAt": 1508014259664,
+				"updatedAt": 1508014259664,
+				"id": "b15538d4-b0e3-619e-ca17-6d21996ed41d",
+				"collection_id": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8"
+			},
+			{
+				"name": "Boat tests",
+				"description": "",
+				"collectionId": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"collection": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"order": [
+					"b96c734f-63a6-115d-1949-fc52f104e294",
+					"c7621f79-3d47-bae7-9d2c-079dc9bdd440",
+					"cbba151c-ed57-416f-c9a1-491ed6fccef0",
+					"aa62d35f-aa38-2663-f8ed-d554e33bbe5a",
+					"532e016d-cc91-1557-cdd7-16dfa0ccf882",
+					"b99aae37-0666-89bb-ca0c-a36a3cad2ce1",
+					"4e91d076-aaaf-8069-bfd0-4280e88820ac",
+					"8d4b26ef-1857-7ec6-ddc8-27bb732fe294",
+					"267b9c6a-1fa4-e306-5f87-cfc544632f2f"
+				],
+				"owner": "2860827",
+				"folders_order": [],
+				"createdAt": 1508009187108,
+				"updatedAt": 1508009187108,
+				"id": "6b7f3bce-deb6-3cad-bd1e-ddd4bb9ac8f6",
+				"collection_id": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8"
+			},
+			{
+				"name": "Slip tests",
+				"description": "",
+				"collectionId": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"collection": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"order": [
+					"24c18901-c88e-2f47-001f-951f936c74e0",
+					"0ffff1f9-84b7-ee92-0c06-30d2486624d5",
+					"96eb14dc-09af-8d75-564d-770a4c4729c9",
+					"c19b02ce-91d1-78fc-21bc-9ba502f29953",
+					"f1a54f47-1023-eea9-2f57-d2434f5e316a",
+					"7c80999f-0d8e-0a71-6c87-46bfb35b301f",
+					"23949eaa-3a39-f785-2b9b-d2fd79fadd01",
+					"9c0fefea-b532-9b09-e422-090e75ebb275",
+					"fca3f398-d9c2-450a-b99c-b024eef7bc98"
+				],
+				"owner": "2860827",
+				"folders_order": [],
+				"createdAt": 1508009194870,
+				"updatedAt": 1508009194870,
+				"id": "373e14cc-2ad3-5c7b-3bb7-cb450aed7c18",
+				"collection_id": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8"
+			},
+			{
+				"name": "delete tests",
+				"description": "",
+				"collectionId": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"collection": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+				"order": [
+					"9077ab2c-2a41-5174-2e0a-020772e1b936",
+					"85e8d740-f202-399f-b821-213d1887034f",
+					"f1b9fa5d-4077-57b4-b71b-b40dc8098d53",
+					"7fad89be-b4fc-7689-05dd-afc99d84fc22",
+					"787594ee-cca8-16bf-75e2-215158fb2fc4",
+					"c0734297-956e-5bd3-163b-15ab8fc93a9d",
+					"5d110e31-0280-2629-5533-944a28fd67ca",
+					"5a0cc0da-8747-25c6-e0de-347560d54a36",
+					"ec7eab0a-5e72-632c-665e-5cb199161339",
+					"6b226a3d-3bae-3cfb-f69a-af1ed9bd9112",
+					"cdd52f54-93c0-820c-3f7e-7beec56ce657",
+					"1b8d0f84-5e43-ce49-7001-5291c78fac25",
+					"e7d8fe6e-105c-25e8-4c53-49d78b601199",
+					"ca7555e1-872a-981c-6009-99d0cabd854d",
+					"2d8c18ec-759d-bddb-b4c3-345641272453",
+					"76b18080-fde1-b89f-4014-f79cb3d019fa",
+					"ff7aafbd-981a-733e-9b19-7b9c6ecc7f0b"
+				],
+				"owner": "2860827",
+				"folders_order": [],
+				"createdAt": 1508015874696,
+				"updatedAt": 1508015874696,
+				"id": "2e93966c-ba79-f86e-8f79-7898d4f11182",
+				"collection_id": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8"
+			}
+		],
+		"folders_order": [
+			"6b7f3bce-deb6-3cad-bd1e-ddd4bb9ac8f6",
+			"373e14cc-2ad3-5c7b-3bb7-cb450aed7c18",
+			"b15538d4-b0e3-619e-ca17-6d21996ed41d",
+			"2e93966c-ba79-f86e-8f79-7898d4f11182"
+		],
+		"timestamp": 1508009152579,
+		"synced": false,
+		"remote_id": 0,
+		"owner": "2860827",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1508009152579,
+		"updatedAt": 1508022330894,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"enabled": true,
+			"key": "echo_digest_realm",
+			"type": "text",
+			"value": "Users"
+		},
+		{
+			"enabled": true,
+			"key": "echo_digest_nonce",
+			"type": "text",
+			"value": "NuRCfRVP8LeDVo4PkJxrRm4gNxotIKqy"
+		},
+		{
+			"enabled": true,
+			"key": "true,",
+			"type": "text",
+			"value": 30
+		},
+		{
+			"enabled": true,
+			"key": "before_gists",
+			"type": "text",
+			"value": 27
+		},
+		{
+			"enabled": true,
+			"key": "new_url",
+			"type": "text",
+			"value": "https://api.github.com/gists/4cc563d4cb95dcba7362f6712c0ef2ab"
+		},
+		{
+			"enabled": true,
+			"key": "content",
+			"type": "text",
+			"value": "Test file."
+		},
+		{
+			"enabled": true,
+			"key": "new_id",
+			"type": "text",
+			"value": "783880d8a4cfe1196fc6cdee258e594a"
+		},
+		{
+			"enabled": true,
+			"key": "before_delete",
+			"type": "text",
+			"value": 28
+		},
+		{
+			"enabled": true,
+			"key": "boat_id",
+			"type": "text",
+			"value": "ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgJnOlAkM"
+		},
+		{
+			"enabled": true,
+			"key": "before_before",
+			"type": "text",
+			"value": 7
+		},
+		{
+			"enabled": true,
+			"key": "before_boats",
+			"type": "text",
+			"value": 38
+		},
+		{
+			"enabled": true,
+			"key": "slip_id",
+			"type": "text",
+			"value": "ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgIDkkQkM"
+		},
+		{
+			"enabled": true,
+			"key": "before_slips",
+			"type": "text",
+			"value": 31
+		},
+		{
+			"enabled": true,
+			"key": "boat_name",
+			"type": "text",
+			"value": "test boat"
+		},
+		{
+			"enabled": true,
+			"key": "slip_number",
+			"type": "text",
+			"value": 10
+		},
+		{
+			"enabled": true,
+			"key": "slip_current",
+			"type": "text",
+			"value": null
+		},
+		{
+			"enabled": true,
+			"key": "arrival_boat",
+			"type": "text",
+			"value": "ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgK_IgAsM"
+		},
+		{
+			"enabled": true,
+			"key": "arrival_slip",
+			"type": "text",
+			"value": "ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgIDyyAgM"
+		},
+		{
+			"enabled": true,
+			"key": "new_arrival_boat",
+			"type": "text",
+			"value": "ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgPynkAoM"
+		},
+		{
+			"enabled": true,
+			"key": "before_delete_boats",
+			"type": "text",
+			"value": 42
+		},
+		{
+			"enabled": true,
+			"key": "before_delete_slips",
+			"type": "text",
+			"value": 34
+		},
+		{
+			"enabled": true,
+			"key": "new_boat_id",
+			"type": "text",
+			"value": "ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgOu4jwsM"
+		},
+		{
+			"enabled": true,
+			"key": "new_slip_id",
+			"type": "text",
+			"value": "ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgN7qiQoM"
+		}
+	],
+	"results": [
+		{
+			"name": "get number of before boats",
+			"id": "b96c734f-63a6-115d-1949-fc52f104e294",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of before boats correct": true
+			},
+			"testPassFailCounts": {
+				"number of before boats correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"210"
+			],
+			"allTests": [
+				{
+					"number of before boats correct": true
+				}
+			],
+			"time": "210",
+			"totalRequestTime": "210",
+			"iterationResults": {}
+		},
+		{
+			"name": "boat post",
+			"id": "c7621f79-3d47-bae7-9d2c-079dc9bdd440",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted boat content is correct and at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"248"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted boat content is correct and at sea": true
+				}
+			],
+			"time": "248",
+			"totalRequestTime": "248",
+			"iterationResults": {}
+		},
+		{
+			"name": "get number of after boats and get all boats",
+			"id": "cbba151c-ed57-416f-c9a1-491ed6fccef0",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of after boats correct": true,
+				"gets multiple boats": true
+			},
+			"testPassFailCounts": {
+				"number of after boats correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"gets multiple boats": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"182"
+			],
+			"allTests": [
+				{
+					"number of after boats correct": true,
+					"gets multiple boats": true
+				}
+			],
+			"time": "182",
+			"totalRequestTime": "182",
+			"iterationResults": {}
+		},
+		{
+			"name": "get individual boat",
+			"id": "aa62d35f-aa38-2663-f8ed-d554e33bbe5a",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Only get 1 boat and the boat id is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Only get 1 boat and the boat id is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"127"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Only get 1 boat and the boat id is correct": true
+				}
+			],
+			"time": "127",
+			"totalRequestTime": "127",
+			"iterationResults": {}
+		},
+		{
+			"name": "modify individual boat",
+			"id": "532e016d-cc91-1557-cdd7-16dfa0ccf882",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Edited boat content is correct and old stuff is still the same": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Edited boat content is correct and old stuff is still the same": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"193"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Edited boat content is correct and old stuff is still the same": true
+				}
+			],
+			"time": "193",
+			"totalRequestTime": "193",
+			"iterationResults": {}
+		},
+		{
+			"name": "replace individual boat",
+			"id": "b99aae37-0666-89bb-ca0c-a36a3cad2ce1",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Replaced boat iformation is correct and changes name, type, length": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Replaced boat iformation is correct and changes name, type, length": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"187"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Replaced boat iformation is correct and changes name, type, length": true
+				}
+			],
+			"time": "187",
+			"totalRequestTime": "187",
+			"iterationResults": {}
+		},
+		{
+			"name": "bad post has an error",
+			"id": "4e91d076-aaaf-8069-bfd0-4280e88820ac",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"A bad boat post has status code 500": true
+			},
+			"testPassFailCounts": {
+				"A bad boat post has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"100"
+			],
+			"allTests": [
+				{
+					"A bad boat post has status code 500": true
+				}
+			],
+			"time": "100",
+			"totalRequestTime": "100",
+			"iterationResults": {}
+		},
+		{
+			"name": "bad boat put has an error",
+			"id": "8d4b26ef-1857-7ec6-ddc8-27bb732fe294",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"Bad boat put has status code 500": true
+			},
+			"testPassFailCounts": {
+				"Bad boat put has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"211"
+			],
+			"allTests": [
+				{
+					"Bad boat put has status code 500": true
+				}
+			],
+			"time": "211",
+			"totalRequestTime": "211",
+			"iterationResults": {}
+		},
+		{
+			"name": "bad boat modify has error",
+			"id": "267b9c6a-1fa4-e306-5f87-cfc544632f2f",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"Bad boat modification has status code 500": true
+			},
+			"testPassFailCounts": {
+				"Bad boat modification has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"158"
+			],
+			"allTests": [
+				{
+					"Bad boat modification has status code 500": true
+				}
+			],
+			"time": "158",
+			"totalRequestTime": "158",
+			"iterationResults": {}
+		},
+		{
+			"name": "get number of before slips",
+			"id": "24c18901-c88e-2f47-001f-951f936c74e0",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of before slips correct": true
+			},
+			"testPassFailCounts": {
+				"number of before slips correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"197"
+			],
+			"allTests": [
+				{
+					"number of before slips correct": true
+				}
+			],
+			"time": "197",
+			"totalRequestTime": "197",
+			"iterationResults": {}
+		},
+		{
+			"name": "slip post",
+			"id": "0ffff1f9-84b7-ee92-0c06-30d2486624d5",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted slip content is correct and empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted slip content is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"309"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted slip content is correct and empty": true
+				}
+			],
+			"time": "309",
+			"totalRequestTime": "309",
+			"iterationResults": {}
+		},
+		{
+			"name": "get number of after slips and get all slips",
+			"id": "96eb14dc-09af-8d75-564d-770a4c4729c9",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of after slips correct": true,
+				"gets multiple slips": true
+			},
+			"testPassFailCounts": {
+				"number of after slips correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"gets multiple slips": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"309"
+			],
+			"allTests": [
+				{
+					"number of after slips correct": true,
+					"gets multiple slips": true
+				}
+			],
+			"time": "309",
+			"totalRequestTime": "309",
+			"iterationResults": {}
+		},
+		{
+			"name": "get individual slip",
+			"id": "c19b02ce-91d1-78fc-21bc-9ba502f29953",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Only get 1 slip and the slip id is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Only get 1 slip and the slip id is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"164"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Only get 1 slip and the slip id is correct": true
+				}
+			],
+			"time": "164",
+			"totalRequestTime": "164",
+			"iterationResults": {}
+		},
+		{
+			"name": "modify individual slip",
+			"id": "f1a54f47-1023-eea9-2f57-d2434f5e316a",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Modify slip content is correct and old stuff is still the same": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Modify slip content is correct and old stuff is still the same": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"189"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Modify slip content is correct and old stuff is still the same": true
+				}
+			],
+			"time": "189",
+			"totalRequestTime": "189",
+			"iterationResults": {}
+		},
+		{
+			"name": "replace individual slip",
+			"id": "7c80999f-0d8e-0a71-6c87-46bfb35b301f",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Replaced slip number is correct and inherits old stuff": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Replaced slip number is correct and inherits old stuff": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"158"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Replaced slip number is correct and inherits old stuff": true
+				}
+			],
+			"time": "158",
+			"totalRequestTime": "158",
+			"iterationResults": {}
+		},
+		{
+			"name": "bad slip post has error",
+			"id": "23949eaa-3a39-f785-2b9b-d2fd79fadd01",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"Bad slip post has status code 500": true
+			},
+			"testPassFailCounts": {
+				"Bad slip post has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"144"
+			],
+			"allTests": [
+				{
+					"Bad slip post has status code 500": true
+				}
+			],
+			"time": "144",
+			"totalRequestTime": "144",
+			"iterationResults": {}
+		},
+		{
+			"name": "bad slip modify has error",
+			"id": "9c0fefea-b532-9b09-e422-090e75ebb275",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"Bad slip modify has status code 500": true
+			},
+			"testPassFailCounts": {
+				"Bad slip modify has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"88"
+			],
+			"allTests": [
+				{
+					"Bad slip modify has status code 500": true
+				}
+			],
+			"time": "88",
+			"totalRequestTime": "88",
+			"iterationResults": {}
+		},
+		{
+			"name": "bad slip replace has error",
+			"id": "fca3f398-d9c2-450a-b99c-b024eef7bc98",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"Bad slip replace has status code 500": true
+			},
+			"testPassFailCounts": {
+				"Bad slip replace has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"83"
+			],
+			"allTests": [
+				{
+					"Bad slip replace has status code 500": true
+				}
+			],
+			"time": "83",
+			"totalRequestTime": "83",
+			"iterationResults": {}
+		},
+		{
+			"name": "post boat for arrival",
+			"id": "ddcba4df-caff-fd7c-5e21-473cee9f3815",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted boat content is correct and at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"260"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted boat content is correct and at sea": true
+				}
+			],
+			"time": "260",
+			"totalRequestTime": "260",
+			"iterationResults": {}
+		},
+		{
+			"name": "post slip for arrival",
+			"id": "02e5bcab-bd99-c7ff-8f06-175bc4efac06",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New slip for arrival is correct and empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New slip for arrival is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"235"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New slip for arrival is correct and empty": true
+				}
+			],
+			"time": "235",
+			"totalRequestTime": "235",
+			"iterationResults": {}
+		},
+		{
+			"name": "boat arrives (put)",
+			"id": "6ffd5b81-18fa-c3ec-3980-bf14067a1335",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgK_IgAsM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Boat arrives in the slip": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat arrives in the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"277"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Boat arrives in the slip": true
+				}
+			],
+			"time": "277",
+			"totalRequestTime": "277",
+			"iterationResults": {}
+		},
+		{
+			"name": "boat is not at sea (get)",
+			"id": "a9c25312-c3b0-f25e-0b17-1f8652d8cb22",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgK_IgAsM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Boat is not at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat is not at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"136"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Boat is not at sea": true
+				}
+			],
+			"time": "136",
+			"totalRequestTime": "136",
+			"iterationResults": {}
+		},
+		{
+			"name": "post newer boat for arrival",
+			"id": "27f36dc7-4a4f-9613-9586-0f23e5cbc264",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted boat content is correct and at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"208"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted boat content is correct and at sea": true
+				}
+			],
+			"time": "208",
+			"totalRequestTime": "208",
+			"iterationResults": {}
+		},
+		{
+			"name": "try to have boat arrive in full slip",
+			"id": "fda88e84-8638-151d-2fb8-71fc324c99fc",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgPynkAoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"A full slip returns 403 when another boat is trying to dock": true
+			},
+			"testPassFailCounts": {
+				"A full slip returns 403 when another boat is trying to dock": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"131"
+			],
+			"allTests": [
+				{
+					"A full slip returns 403 when another boat is trying to dock": true
+				}
+			],
+			"time": "131",
+			"totalRequestTime": "131",
+			"iterationResults": {}
+		},
+		{
+			"name": "boat goes to at_sea",
+			"id": "725b8fc2-cd36-f113-c435-9329f2e730a2",
+			"url": "https://mobile-assignment-0.appspot.com/atsea/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgK_IgAsM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Boat is at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat is at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"262"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Boat is at sea": true
+				}
+			],
+			"time": "262",
+			"totalRequestTime": "262",
+			"iterationResults": {}
+		},
+		{
+			"name": "slip is now empty",
+			"id": "b3c54a5c-b517-ca81-5882-641466bfe78f",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgIDyyAgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Slip has no current_boat and no arrival_date. Slip was updated last call since this is a get.": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Slip has no current_boat and no arrival_date. Slip was updated last call since this is a get.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"102"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Slip has no current_boat and no arrival_date. Slip was updated last call since this is a get.": true
+				}
+			],
+			"time": "102",
+			"totalRequestTime": "102",
+			"iterationResults": {}
+		},
+		{
+			"name": "post boat to delete",
+			"id": "9077ab2c-2a41-5174-2e0a-020772e1b936",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted boat content is correct and at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"353"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted boat content is correct and at sea": true
+				}
+			],
+			"time": "353",
+			"totalRequestTime": "353",
+			"iterationResults": {}
+		},
+		{
+			"name": "get number of boats before delete",
+			"id": "85e8d740-f202-399f-b821-213d1887034f",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of boats before a delete is correct": true
+			},
+			"testPassFailCounts": {
+				"number of boats before a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"169"
+			],
+			"allTests": [
+				{
+					"number of boats before a delete is correct": true
+				}
+			],
+			"time": "169",
+			"totalRequestTime": "169",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete the boat",
+			"id": "f1b9fa5d-4077-57b4-b71b-b40dc8098d53",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgJnOlAkM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Deleting a boat status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Deleting a boat status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"221"
+			],
+			"allTests": [
+				{
+					"Deleting a boat status code is 200": true
+				}
+			],
+			"time": "221",
+			"totalRequestTime": "221",
+			"iterationResults": {}
+		},
+		{
+			"name": "get number of boats after delete",
+			"id": "7fad89be-b4fc-7689-05dd-afc99d84fc22",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of boats after a delete is correct": true
+			},
+			"testPassFailCounts": {
+				"number of boats after a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"172"
+			],
+			"allTests": [
+				{
+					"number of boats after a delete is correct": true
+				}
+			],
+			"time": "172",
+			"totalRequestTime": "172",
+			"iterationResults": {}
+		},
+		{
+			"name": "post slip to delete",
+			"id": "787594ee-cca8-16bf-75e2-215158fb2fc4",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted slip content is correct and empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted slip content is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"220"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted slip content is correct and empty": true
+				}
+			],
+			"time": "220",
+			"totalRequestTime": "220",
+			"iterationResults": {}
+		},
+		{
+			"name": "get number of slips before delete",
+			"id": "c0734297-956e-5bd3-163b-15ab8fc93a9d",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of slips before a delete is correct": true
+			},
+			"testPassFailCounts": {
+				"number of slips before a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"192"
+			],
+			"allTests": [
+				{
+					"number of slips before a delete is correct": true
+				}
+			],
+			"time": "192",
+			"totalRequestTime": "192",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete the slip",
+			"id": "5d110e31-0280-2629-5533-944a28fd67ca",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgIDkkQkM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Deleting a boat status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Deleting a boat status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"185"
+			],
+			"allTests": [
+				{
+					"Deleting a boat status code is 200": true
+				}
+			],
+			"time": "185",
+			"totalRequestTime": "185",
+			"iterationResults": {}
+		},
+		{
+			"name": "get number of slips after delete",
+			"id": "5a0cc0da-8747-25c6-e0de-347560d54a36",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"number of slips after a delete is correct": true
+			},
+			"testPassFailCounts": {
+				"number of slips after a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"143"
+			],
+			"allTests": [
+				{
+					"number of slips after a delete is correct": true
+				}
+			],
+			"time": "143",
+			"totalRequestTime": "143",
+			"iterationResults": {}
+		},
+		{
+			"name": "post boat to dock and delete",
+			"id": "ec7eab0a-5e72-632c-665e-5cb199161339",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted boat content is correct and at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"178"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted boat content is correct and at sea": true
+				}
+			],
+			"time": "178",
+			"totalRequestTime": "178",
+			"iterationResults": {}
+		},
+		{
+			"name": "post slip to be docked for delete",
+			"id": "6b226a3d-3bae-3cfb-f69a-af1ed9bd9112",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted slip content is correct and empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted slip content is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"230"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted slip content is correct and empty": true
+				}
+			],
+			"time": "230",
+			"totalRequestTime": "230",
+			"iterationResults": {}
+		},
+		{
+			"name": "boat arrives (put) for delete test",
+			"id": "cdd52f54-93c0-820c-3f7e-7beec56ce657",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgKvzxwgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Boat arrives in the slip": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat arrives in the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"303"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Boat arrives in the slip": true
+				}
+			],
+			"time": "303",
+			"totalRequestTime": "303",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete the boat in slip",
+			"id": "1b8d0f84-5e43-ce49-7001-5291c78fac25",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgKvzxwgM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Deleting a boat status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Deleting a boat status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"337"
+			],
+			"allTests": [
+				{
+					"Deleting a boat status code is 200": true
+				}
+			],
+			"time": "337",
+			"totalRequestTime": "337",
+			"iterationResults": {}
+		},
+		{
+			"name": "slip is now empty after deleting a boat",
+			"id": "e7d8fe6e-105c-25e8-4c53-49d78b601199",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgN7qiQoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Slip has no current_boat and no arrival_date after the docked boat was deleted.": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Slip has no current_boat and no arrival_date after the docked boat was deleted.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"106"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Slip has no current_boat and no arrival_date after the docked boat was deleted.": true
+				}
+			],
+			"time": "106",
+			"totalRequestTime": "106",
+			"iterationResults": {}
+		},
+		{
+			"name": "post a new boat to dock for the slip delete",
+			"id": "ca7555e1-872a-981c-6009-99d0cabd854d",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New, posted boat content is correct and at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"212"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New, posted boat content is correct and at sea": true
+				}
+			],
+			"time": "212",
+			"totalRequestTime": "212",
+			"iterationResults": {}
+		},
+		{
+			"name": "new boat arrives (put) for delete test",
+			"id": "2d8c18ec-759d-bddb-b4c3-345641272453",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgOu4jwsM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Boat arrives in the slip": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat arrives in the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"269"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Boat arrives in the slip": true
+				}
+			],
+			"time": "269",
+			"totalRequestTime": "269",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete the slip with a boat docked",
+			"id": "76b18080-fde1-b89f-4014-f79cb3d019fa",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgN7qiQoM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Deleting a slip status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Deleting a slip status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"237"
+			],
+			"allTests": [
+				{
+					"Deleting a slip status code is 200": true
+				}
+			],
+			"time": "237",
+			"totalRequestTime": "237",
+			"iterationResults": {}
+		},
+		{
+			"name": "boat is at sea after slip deleted",
+			"id": "ff7aafbd-981a-733e-9b19-7b9c6ecc7f0b",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgOu4jwsM",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Boat is now at sea": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat is now at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"103"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Boat is now at sea": true
+				}
+			],
+			"time": "103",
+			"totalRequestTime": "103",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 69,
+	"totalFail": 0,
+	"totalTime": 8498,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "get number of before boats",
+			"id": "b96c734f-63a6-115d-1949-fc52f104e294",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of before boats correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "boat post",
+			"id": "c7621f79-3d47-bae7-9d2c-079dc9bdd440",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get number of after boats and get all boats",
+			"id": "cbba151c-ed57-416f-c9a1-491ed6fccef0",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of after boats correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"gets multiple boats": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get individual boat",
+			"id": "aa62d35f-aa38-2663-f8ed-d554e33bbe5a",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Only get 1 boat and the boat id is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "modify individual boat",
+			"id": "532e016d-cc91-1557-cdd7-16dfa0ccf882",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Edited boat content is correct and old stuff is still the same": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "replace individual boat",
+			"id": "b99aae37-0666-89bb-ca0c-a36a3cad2ce1",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Replaced boat iformation is correct and changes name, type, length": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "bad post has an error",
+			"id": "4e91d076-aaaf-8069-bfd0-4280e88820ac",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"A bad boat post has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "bad boat put has an error",
+			"id": "8d4b26ef-1857-7ec6-ddc8-27bb732fe294",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Bad boat put has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "bad boat modify has error",
+			"id": "267b9c6a-1fa4-e306-5f87-cfc544632f2f",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgO2xwwgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Bad boat modification has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get number of before slips",
+			"id": "24c18901-c88e-2f47-001f-951f936c74e0",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of before slips correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "slip post",
+			"id": "0ffff1f9-84b7-ee92-0c06-30d2486624d5",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted slip content is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get number of after slips and get all slips",
+			"id": "96eb14dc-09af-8d75-564d-770a4c4729c9",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of after slips correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"gets multiple slips": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get individual slip",
+			"id": "c19b02ce-91d1-78fc-21bc-9ba502f29953",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Only get 1 slip and the slip id is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "modify individual slip",
+			"id": "f1a54f47-1023-eea9-2f57-d2434f5e316a",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Modify slip content is correct and old stuff is still the same": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "replace individual slip",
+			"id": "7c80999f-0d8e-0a71-6c87-46bfb35b301f",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Replaced slip number is correct and inherits old stuff": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "bad slip post has error",
+			"id": "23949eaa-3a39-f785-2b9b-d2fd79fadd01",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Bad slip post has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "bad slip modify has error",
+			"id": "9c0fefea-b532-9b09-e422-090e75ebb275",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Bad slip modify has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "bad slip replace has error",
+			"id": "fca3f398-d9c2-450a-b99c-b024eef7bc98",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgLrGwQgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Bad slip replace has status code 500": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post boat for arrival",
+			"id": "ddcba4df-caff-fd7c-5e21-473cee9f3815",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post slip for arrival",
+			"id": "02e5bcab-bd99-c7ff-8f06-175bc4efac06",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New slip for arrival is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "boat arrives (put)",
+			"id": "6ffd5b81-18fa-c3ec-3980-bf14067a1335",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgK_IgAsM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat arrives in the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "boat is not at sea (get)",
+			"id": "a9c25312-c3b0-f25e-0b17-1f8652d8cb22",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgK_IgAsM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat is not at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post newer boat for arrival",
+			"id": "27f36dc7-4a4f-9613-9586-0f23e5cbc264",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "try to have boat arrive in full slip",
+			"id": "fda88e84-8638-151d-2fb8-71fc324c99fc",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgPynkAoM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"A full slip returns 403 when another boat is trying to dock": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "boat goes to at_sea",
+			"id": "725b8fc2-cd36-f113-c435-9329f2e730a2",
+			"url": "https://mobile-assignment-0.appspot.com/atsea/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgK_IgAsM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat is at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "slip is now empty",
+			"id": "b3c54a5c-b517-ca81-5882-641466bfe78f",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgIDyyAgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Slip has no current_boat and no arrival_date. Slip was updated last call since this is a get.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post boat to delete",
+			"id": "9077ab2c-2a41-5174-2e0a-020772e1b936",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get number of boats before delete",
+			"id": "85e8d740-f202-399f-b821-213d1887034f",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of boats before a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "delete the boat",
+			"id": "f1b9fa5d-4077-57b4-b71b-b40dc8098d53",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgJnOlAkM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Deleting a boat status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get number of boats after delete",
+			"id": "7fad89be-b4fc-7689-05dd-afc99d84fc22",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of boats after a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post slip to delete",
+			"id": "787594ee-cca8-16bf-75e2-215158fb2fc4",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted slip content is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get number of slips before delete",
+			"id": "c0734297-956e-5bd3-163b-15ab8fc93a9d",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of slips before a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "delete the slip",
+			"id": "5d110e31-0280-2629-5533-944a28fd67ca",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgIDkkQkM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Deleting a boat status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get number of slips after delete",
+			"id": "5a0cc0da-8747-25c6-e0de-347560d54a36",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"number of slips after a delete is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post boat to dock and delete",
+			"id": "ec7eab0a-5e72-632c-665e-5cb199161339",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post slip to be docked for delete",
+			"id": "6b226a3d-3bae-3cfb-f69a-af1ed9bd9112",
+			"url": "https://mobile-assignment-0.appspot.com/slip",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted slip content is correct and empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "boat arrives (put) for delete test",
+			"id": "cdd52f54-93c0-820c-3f7e-7beec56ce657",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgKvzxwgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat arrives in the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "delete the boat in slip",
+			"id": "1b8d0f84-5e43-ce49-7001-5291c78fac25",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgKvzxwgM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Deleting a boat status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "slip is now empty after deleting a boat",
+			"id": "e7d8fe6e-105c-25e8-4c53-49d78b601199",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgN7qiQoM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Slip has no current_boat and no arrival_date after the docked boat was deleted.": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "post a new boat to dock for the slip delete",
+			"id": "ca7555e1-872a-981c-6009-99d0cabd854d",
+			"url": "https://mobile-assignment-0.appspot.com/boat",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New, posted boat content is correct and at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "new boat arrives (put) for delete test",
+			"id": "2d8c18ec-759d-bddb-b4c3-345641272453",
+			"url": "https://mobile-assignment-0.appspot.com/arrival/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgOu4jwsM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat arrives in the slip": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "delete the slip with a boat docked",
+			"id": "76b18080-fde1-b89f-4014-f79cb3d019fa",
+			"url": "https://mobile-assignment-0.appspot.com/slip/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBFNsaXAYgICAgN7qiQoM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Deleting a slip status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "boat is at sea after slip deleted",
+			"id": "ff7aafbd-981a-733e-9b19-7b9c6ecc7f0b",
+			"url": "https://mobile-assignment-0.appspot.com/boat/ahVzfm1vYmlsZS1hc3NpZ25tZW50LTByEQsSBEJvYXQYgICAgOu4jwsM",
+			"time": "2017-10-14T23:08:12.012Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Boat is now at sea": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

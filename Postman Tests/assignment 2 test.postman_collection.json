@@ -1,0 +1,1946 @@
+{
+	"info": {
+		"name": "assignment 2 test",
+		"_postman_id": "f52a4aeb-6790-63c5-5a8b-d993b1c7e9e8",
+		"description": "Test for assignment 2 (496)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Boat tests",
+			"description": "",
+			"item": [
+				{
+					"name": "get number of before boats",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.globals.set(\"before_boats\", jsonData.length);",
+									"",
+									"tests[\"number of before boats correct\"] = jsonData.length === pm.globals.get(\"before_boats\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "boat post",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted boat content is correct and at sea\", function () {",
+									"    var boat_id = jsonData.id;",
+									"    pm.globals.set(\"boat_id\", boat_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_boat_link\", new_link);",
+									"    pm.expect(jsonData.name).to.eql(\"test boat\");",
+									"    pm.expect(jsonData.type).to.eql(\"test type\");",
+									"    pm.expect(jsonData.length).to.eql(10);",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"    pm.globals.set(\"boat_name\", jsonData.name);",
+									"    pm.globals.set(\"boat_number\", jsonData.number);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"test boat\",\n\"type\": \"test type\",\n\"length\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get number of after boats and get all boats",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"tests[\"number of after boats correct\"] = jsonData.length === (pm.globals.get(\"before_boats\") + 1);",
+									"",
+									"tests[\"gets multiple boats\"] = jsonData.length >= 1;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get individual boat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Only get 1 boat and the boat id is correct\", function () {",
+									"    pm.expect(jsonData.id).to.eql(pm.globals.get(\"boat_id\"));",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "modify individual boat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Edited boat content is correct and old stuff is still the same\", function () {",
+									"    pm.expect(jsonData.name).to.eql(pm.globals.get(\"boat_name\"));",
+									"    pm.expect(jsonData.type).to.eql(\"new type\");",
+									"    pm.expect(jsonData.number).to.eql(pm.globals.get(\"variable_key\"));",
+									"});",
+									"",
+									"pm.globals.get(\"variable_key\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"type\": \"new type\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "replace individual boat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Replaced boat iformation is correct and changes name, type, length\", function () {",
+									"    pm.expect(jsonData.id).to.eql(pm.globals.get(\"boat_id\"));",
+									"    pm.expect(jsonData.length).to.eql(45);",
+									"    pm.expect(jsonData.name).to.eql(\"replaced name\");",
+									"    pm.expect(jsonData.type).to.eql(\"replaced type\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"replaced name\",\n\"type\": \"replaced type\",\n\"length\": 45\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bad post has an error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"A bad boat post has status code 500\", function () {",
+									"    pm.response.to.have.status(500);",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"type\": \"test type\",\n\"length\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bad boat put has an error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Bad boat put has status code 500\", function () {",
+									"    pm.response.to.have.status(500);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"replaced name\",\n\"length\": 45\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bad boat modify has error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Bad boat modification has status code 500\", function () {",
+									"    pm.response.to.have.status(500);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"type\": 13\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Slip tests",
+			"description": "",
+			"item": [
+				{
+					"name": "get number of before slips",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.globals.set(\"before_slips\", jsonData.length);",
+									"",
+									"tests[\"number of before slips correct\"] = jsonData.length === pm.globals.get(\"before_slips\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "slip post",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted slip content is correct and empty\", function () {",
+									"    var slip_id = jsonData.id;",
+									"    pm.globals.set(\"slip_id\", slip_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_slip_link\", new_link);",
+									"    pm.expect(jsonData.number).to.eql(10);",
+									"    pm.globals.set(\"slip_current\", jsonData.current_boat);",
+									"    pm.expect(jsonData.current_boat).to.eql(null);",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get number of after slips and get all slips",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"tests[\"number of after slips correct\"] = jsonData.length === (pm.globals.get(\"before_slips\") + 1);",
+									"",
+									"tests[\"gets multiple slips\"] = jsonData.length >= 1;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get individual slip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Only get 1 slip and the slip id is correct\", function () {",
+									"    pm.expect(jsonData.id).to.eql(pm.globals.get(\"slip_id\"));",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "modify individual slip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Modify slip content is correct and old stuff is still the same\", function () {",
+									"    pm.expect(jsonData.id).to.eql(pm.globals.get(\"slip_id\"));",
+									"    pm.expect(jsonData.number).to.eql(4001);",
+									"    pm.expect(jsonData.current_boat).to.eql(pm.globals.get(\"slip_current\"));",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 4001\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "replace individual slip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Replaced slip number is correct and inherits old stuff\", function () {",
+									"    pm.expect(jsonData.id).to.eql(pm.globals.get(\"slip_id\"));",
+									"    pm.expect(jsonData.number).to.eql(4001);",
+									"    pm.expect(jsonData.current_boat).to.eql(pm.globals.get(\"slip_current\"));",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 4001\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bad slip post has error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Bad slip post has status code 500\", function () {",
+									"    pm.response.to.have.status(500);",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": \"ji\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bad slip modify has error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Bad slip modify has status code 500\", function () {",
+									"    pm.response.to.have.status(500);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "bad slip replace has error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Bad slip replace has status code 500\", function () {",
+									"    pm.response.to.have.status(500);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Arrival and at sea tests",
+			"description": "Testing the arrival functionality",
+			"item": [
+				{
+					"name": "post boat for arrival",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted boat content is correct and at sea\", function () {",
+									"    var boat_id = jsonData.id;",
+									"    pm.globals.set(\"arrival_boat\", boat_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_boat_link\", new_link);",
+									"    pm.expect(jsonData.name).to.eql(\"test boat\");",
+									"    pm.expect(jsonData.type).to.eql(\"test type\");",
+									"    pm.expect(jsonData.length).to.eql(10);",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"    pm.globals.set(\"boat_name\", jsonData.name);",
+									"    pm.globals.set(\"boat_number\", jsonData.number);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"test boat\",\n\"type\": \"test type\",\n\"length\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "post slip for arrival",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New slip for arrival is correct and empty\", function () {",
+									"    var slip_id = jsonData.id;",
+									"    pm.globals.set(\"arrival_slip\", slip_id);",
+									"    pm.expect(jsonData.current_boat).to.eql(null);",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 428\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "boat arrives (put)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Boat arrives in the slip\", function () {",
+									"    pm.expect(jsonData.current_boat).to.eql(pm.globals.get(\"arrival_boat\"));",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 428,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/arrival/{{arrival_boat}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"arrival",
+								"{{arrival_boat}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "boat is not at sea (get)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Boat is not at sea\", function () {",
+									"    pm.expect(jsonData.at_sea).to.eql(false);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 411,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{arrival_boat}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{arrival_boat}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "post newer boat for arrival",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted boat content is correct and at sea\", function () {",
+									"    var boat_id = jsonData.id;",
+									"    pm.globals.set(\"new_arrival_boat\", boat_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_boat_link\", new_link);",
+									"    pm.expect(jsonData.name).to.eql(\"test boat\");",
+									"    pm.expect(jsonData.type).to.eql(\"test type\");",
+									"    pm.expect(jsonData.length).to.eql(10);",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"    pm.globals.set(\"boat_name\", jsonData.name);",
+									"    pm.globals.set(\"boat_number\", jsonData.number);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"test boat\",\n\"type\": \"test type\",\n\"length\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "try to have boat arrive in full slip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"A full slip returns 403 when another boat is trying to dock\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 428,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/arrival/{{new_arrival_boat}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"arrival",
+								"{{new_arrival_boat}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "boat goes to at_sea",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Boat is at sea\", function () {",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/atsea/{{arrival_boat}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"atsea",
+								"{{arrival_boat}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "slip is now empty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Slip has no current_boat and no arrival_date. Slip was updated last call since this is a get.\", function () {",
+									"    pm.expect(jsonData.current_boat).to.eql(null);",
+									"    pm.expect(jsonData.arrival_date).to.eql(null);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 411,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{arrival_slip}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{arrival_slip}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "delete tests",
+			"description": "",
+			"item": [
+				{
+					"name": "post boat to delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted boat content is correct and at sea\", function () {",
+									"    var boat_id = jsonData.id;",
+									"    pm.globals.set(\"boat_id\", boat_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_boat_link\", new_link);",
+									"    pm.expect(jsonData.name).to.eql(\"test boat\");",
+									"    pm.expect(jsonData.type).to.eql(\"test type\");",
+									"    pm.expect(jsonData.length).to.eql(10);",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"    pm.globals.set(\"boat_name\", jsonData.name);",
+									"    pm.globals.set(\"boat_number\", jsonData.number);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"test boat\",\n\"type\": \"test type\",\n\"length\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get number of boats before delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.globals.set(\"before_delete_boats\", jsonData.length);",
+									"",
+									"tests[\"number of boats before a delete is correct\"] = jsonData.length === pm.globals.get(\"before_delete_boats\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete the boat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Deleting a boat status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get number of boats after delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"tests[\"number of boats after a delete is correct\"] = jsonData.length === (pm.globals.get(\"before_delete_boats\") - 1);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "post slip to delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted slip content is correct and empty\", function () {",
+									"    var slip_id = jsonData.id;",
+									"    pm.globals.set(\"slip_id\", slip_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_slip_link\", new_link);",
+									"    pm.expect(jsonData.number).to.eql(10);",
+									"    pm.globals.set(\"slip_current\", jsonData.current_boat);",
+									"    pm.expect(jsonData.current_boat).to.eql(null);",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get number of slips before delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.globals.set(\"before_delete_slips\", jsonData.length);",
+									"",
+									"tests[\"number of slips before a delete is correct\"] = jsonData.length === pm.globals.get(\"before_delete_slips\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete the slip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Deleting a boat status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get number of slips after delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"tests[\"number of slips after a delete is correct\"] = jsonData.length === (pm.globals.get(\"before_delete_slips\") - 1);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "post boat to dock and delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted boat content is correct and at sea\", function () {",
+									"    var boat_id = jsonData.id;",
+									"    pm.globals.set(\"new_boat_id\", boat_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_boat_link\", new_link);",
+									"    pm.expect(jsonData.name).to.eql(\"test boat\");",
+									"    pm.expect(jsonData.type).to.eql(\"test type\");",
+									"    pm.expect(jsonData.length).to.eql(10);",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"    pm.globals.set(\"boat_name\", jsonData.name);",
+									"    pm.globals.set(\"boat_number\", jsonData.number);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"test boat\",\n\"type\": \"test type\",\n\"length\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "post slip to be docked for delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted slip content is correct and empty\", function () {",
+									"    var slip_id = jsonData.id;",
+									"    pm.globals.set(\"new_slip_id\", slip_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_slip_link\", new_link);",
+									"    pm.expect(jsonData.number).to.eql(222);",
+									"    pm.globals.set(\"slip_current\", jsonData.current_boat);",
+									"    pm.expect(jsonData.current_boat).to.eql(null);",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 222\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "boat arrives (put) for delete test",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Boat arrives in the slip\", function () {",
+									"    pm.expect(jsonData.current_boat).to.eql(pm.globals.get(\"new_boat_id\"));",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 222,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/arrival/{{new_boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"arrival",
+								"{{new_boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete the boat in slip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Deleting a boat status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{new_boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{new_boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "slip is now empty after deleting a boat",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Slip has no current_boat and no arrival_date after the docked boat was deleted.\", function () {",
+									"    pm.expect(jsonData.current_boat).to.eql(null);",
+									"    pm.expect(jsonData.arrival_date).to.eql(null);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 411,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{new_slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{new_slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "post a new boat to dock for the slip delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"New, posted boat content is correct and at sea\", function () {",
+									"    var boat_id = jsonData.id;",
+									"    pm.globals.set(\"new_boat_id\", boat_id);",
+									"    var new_link = jsonData.self;",
+									"    postman.setEnvironmentVariable(\"new_boat_link\", new_link);",
+									"    pm.expect(jsonData.name).to.eql(\"test boat\");",
+									"    pm.expect(jsonData.type).to.eql(\"test type\");",
+									"    pm.expect(jsonData.length).to.eql(10);",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"    pm.globals.set(\"boat_name\", jsonData.name);",
+									"    pm.globals.set(\"boat_number\", jsonData.number);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"test boat\",\n\"type\": \"test type\",\n\"length\": 10\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "new boat arrives (put) for delete test",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Boat arrives in the slip\", function () {",
+									"    pm.expect(jsonData.current_boat).to.eql(pm.globals.get(\"new_boat_id\"));",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 222,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/arrival/{{new_boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"arrival",
+								"{{new_boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete the slip with a boat docked",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Deleting a slip status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/slip/{{new_slip_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"slip",
+								"{{new_slip_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "boat is at sea after slip deleted",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Boat is now at sea\", function () {",
+									"    pm.expect(jsonData.at_sea).to.eql(true);",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"number\": 411,\n\"date\": \"1/12/12\"\n}"
+						},
+						"url": {
+							"raw": "https://mobile-assignment-0.appspot.com/boat/{{new_boat_id}}",
+							"protocol": "https",
+							"host": [
+								"mobile-assignment-0",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"boat",
+								"{{new_boat_id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
